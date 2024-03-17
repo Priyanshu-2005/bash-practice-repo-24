@@ -13,6 +13,6 @@ temporary_directory=$(mktemp -d)
 git clone "$repo_url" "$temporary_directory"
 
 cd "$temporary_directory" || exit
-cloc .
+cloc $temporary_directory
 
 rm -rf "$temporary_directory"
